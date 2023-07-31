@@ -1105,7 +1105,7 @@ local CloneIllusionACTIVE = false
 CloneIllusion.MouseButton1Click:connect(function()
 	CloneIllusionACTIVE = not CloneIllusionACTIVE
 	if CloneIllusionACTIVE then
-		track:Play(.0, 1e9, 1e7)
+		track:Play(.0, 9e9, 9e7)
 		CloneIllusion.BackgroundColor3 = loc
 	else
 		track:Stop()
@@ -1286,7 +1286,7 @@ MegaInsane.MouseButton1Click:connect(function()
 		while wait() do
 		 if track.IsPlaying == false then
 			if MegaInsaneACTIVE then
-				track:Play(.1, 0.5, 40)
+				track:Play(.0, 0.001, 1e9)
 			end
 		 end
 		end
@@ -1364,7 +1364,7 @@ BarrelRoll.MouseButton1Click:connect(function()
 		while wait() do
 		 if track.IsPlaying == false then
 			if BarrelRollACTIVE then
-				track:Play(.1, 1, 1)
+				track:Play(.0, 1, 1e7)
 			end
 		 end
 		end
